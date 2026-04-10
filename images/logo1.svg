@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Outer border -->
+  <rect x="4" y="4" width="192" height="192" fill="#0A0A0A" stroke="#C9A84C" stroke-width="1.5"/>
+  <!-- Inner border -->
+  <rect x="12" y="12" width="176" height="176" fill="none" stroke="#C9A84C" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- Decorative corner ornaments -->
+  <line x1="4" y1="4" x2="22" y2="4"   stroke="#C9A84C" stroke-width="2"/>
+  <line x1="4" y1="4" x2="4"  y2="22"  stroke="#C9A84C" stroke-width="2"/>
+  <line x1="196" y1="4" x2="178" y2="4"  stroke="#C9A84C" stroke-width="2"/>
+  <line x1="196" y1="4" x2="196" y2="22" stroke="#C9A84C" stroke-width="2"/>
+  <line x1="4" y1="196" x2="22"  y2="196" stroke="#C9A84C" stroke-width="2"/>
+  <line x1="4" y1="196" x2="4"   y2="178" stroke="#C9A84C" stroke-width="2"/>
+  <line x1="196" y1="196" x2="178" y2="196" stroke="#C9A84C" stroke-width="2"/>
+  <line x1="196" y1="196" x2="196" y2="178" stroke="#C9A84C" stroke-width="2"/>
+
+  <!-- Decorative gold mandala/plate ring -->
+  <circle cx="100" cy="90" r="46" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.35"/>
+  <circle cx="100" cy="90" r="38" fill="none" stroke="#C9A84C" stroke-width="0.4" opacity="0.25"/>
+
+  <!-- Decorative petals (lotus-inspired) -->
+  <g opacity="0.45" stroke="#C9A84C" stroke-width="0.7" fill="none">
+    <path d="M100,50 Q108,70 100,90 Q92,70 100,50"/>
+    <path d="M100,50 Q108,70 100,90 Q92,70 100,50" transform="rotate(45,100,90)"/>
+    <path d="M100,50 Q108,70 100,90 Q92,70 100,50" transform="rotate(90,100,90)"/>
+    <path d="M100,50 Q108,70 100,90 Q92,70 100,50" transform="rotate(135,100,90)"/>
+    <path d="M100,50 Q108,70 100,90 Q92,70 100,50" transform="rotate(180,100,90)"/>
+    <path d="M100,50 Q108,70 100,90 Q92,70 100,50" transform="rotate(225,100,90)"/>
+    <path d="M100,50 Q108,70 100,90 Q92,70 100,50" transform="rotate(270,100,90)"/>
+    <path d="M100,50 Q108,70 100,90 Q92,70 100,50" transform="rotate(315,100,90)"/>
+  </g>
+
+  <!-- Plate circle -->
+  <circle cx="100" cy="90" r="26" fill="#0A0A0A" stroke="#C9A84C" stroke-width="1.2"/>
+  <circle cx="100" cy="90" r="20" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- WP Monogram -->
+  <text x="100" y="84" text-anchor="middle" font-family="'Georgia', serif" font-size="16" font-weight="400" letter-spacing="2" fill="#C9A84C">WP</text>
+  <text x="100" y="96" text-anchor="middle" font-family="'Georgia', serif" font-size="5" letter-spacing="3" fill="#C9A84C" opacity="0.8">G</text>
+
+  <!-- Horizontal gold rule -->
+  <line x1="35" y1="143" x2="165" y2="143" stroke="#C9A84C" stroke-width="0.6" opacity="0.5"/>
+  <line x1="50" y1="146" x2="150" y2="146" stroke="#C9A84C" stroke-width="0.3" opacity="0.3"/>
+
+  <!-- Restaurant name -->
+  <text x="100" y="159" text-anchor="middle" font-family="'Georgia', serif" font-size="11" letter-spacing="3.5" fill="#FFFFFF" font-weight="400">WORLD PLATE</text>
+  <text x="100" y="174" text-anchor="middle" font-family="'Georgia', serif" font-size="7" letter-spacing="5" fill="#C9A84C">GOURMET</text>
+
+  <!-- Dot ornaments on horizontal rule -->
+  <circle cx="100" cy="143" r="2" fill="#C9A84C"/>
+  <circle cx="88"  cy="143" r="1" fill="#C9A84C" opacity="0.5"/>
+  <circle cx="112" cy="143" r="1" fill="#C9A84C" opacity="0.5"/>
+</svg>
