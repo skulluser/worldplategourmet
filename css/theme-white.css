@@ -1,0 +1,324 @@
+/* ============================================================
+   WORLD PLATE GOURMET — White / Ivory Light Theme
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   HOW TO USE:
+   Add this link AFTER style.css and animations.css in <head>:
+   <link rel="stylesheet" href="css/theme-white.css">
+
+   To toggle back to dark theme — simply remove that link.
+   ============================================================ */
+
+/* ── Variable Overrides ── */
+:root {
+  --black:        #FAF9F5;
+  --deep:         #F2EFE7;
+  --surface:      #FFFFFF;
+  --surface-2:    #F5F2EA;
+  --cream:        #1C1408;
+  --cream-muted:  #6B5B40;
+  --white:        #1C1408;
+  --border:       rgba(139,105,20,0.14);
+  --border-hover: rgba(201,168,76,0.48);
+  --gold:         #9E6E0A;
+  --gold-light:   #C9A84C;
+  --gold-dark:    #7A5508;
+}
+
+/* ══════════════════════════════════════════
+   GLOBAL
+══════════════════════════════════════════ */
+body { background: #FAF9F5; color: #1C1408; }
+body::before { opacity: 0.012; }
+
+/* ══════════════════════════════════════════
+   PAGE LOADER
+══════════════════════════════════════════ */
+#page-loader            { background: #FAF9F5; }
+.loader-box             { border-color: var(--gold); }
+.loader-box .initials,
+.loader-box .sub-init   { color: var(--gold); }
+.loader-name            { color: var(--cream); }
+.loader-progress        { background: rgba(158,110,10,.12); }
+.loader-progress-bar    { background: var(--gold); }
+.loader-text            { color: var(--gold); }
+.page-transition        { background: #FAF9F5; }
+
+/* ══════════════════════════════════════════
+   CURSOR
+══════════════════════════════════════════ */
+.cursor          { background: var(--gold); mix-blend-mode: multiply; }
+.cursor-follower { border-color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   NAVBAR
+══════════════════════════════════════════ */
+#navbar          { background: transparent; }
+#navbar.scrolled {
+  background: rgba(250,249,245,.97);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 24px rgba(0,0,0,.06);
+}
+.nav-logo-box               { border-color: var(--gold); background: #FAF9F5; }
+.nav-logo-box::before       { border-color: rgba(158,110,10,.2); }
+.nav-logo-box span,
+.nav-logo-box sub           { color: var(--gold); }
+.nav-logo-name              { color: var(--cream); }
+.nav-logo-sub               { color: var(--gold); }
+.nav-links a                { color: #6B5B40; }
+.nav-links a:hover,
+.nav-links a.active         { color: var(--gold); }
+.nav-links a::after         { background: var(--gold); }
+.nav-reserve                { background: var(--gold); color: #FFF; border-color: var(--gold); }
+.nav-reserve:hover          { background: transparent; color: var(--gold); }
+.nav-hamburger span         { background: var(--gold); }
+.nav-mobile                 { background: #FAF9F5; }
+.nav-mobile a               { color: var(--cream); }
+.nav-mobile a:hover         { color: var(--gold); }
+.nav-mobile-close           { color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   HERO
+══════════════════════════════════════════ */
+.hero-bg-fallback {
+  background-image: url('../images/hero-bg.jpg'), linear-gradient(135deg,#F0EAD8 0%,#E8DEC4 100%);
+}
+.hero-bg-fallback::after {
+  background: linear-gradient(135deg,rgba(250,249,245,.82) 0%,rgba(250,249,245,.35) 60%,rgba(250,249,245,.75) 100%);
+}
+.hero-label           { color: var(--gold); }
+.hero-title           { color: var(--cream); }
+.hero-title em        { color: var(--gold-light); }
+.hero-desc            { color: var(--cream-muted); }
+.hero-scroll span     { color: var(--gold); }
+.scroll-line          { background: linear-gradient(to bottom, var(--gold), transparent); }
+.btn-primary          { background: var(--gold); color: #FFF; border-color: var(--gold); }
+.btn-primary::before  { background: var(--gold-light); }
+.btn-primary:hover    { color: #FFF; }
+.btn-secondary        { color: var(--cream); }
+.btn-secondary:hover  { color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   TICKER
+══════════════════════════════════════════ */
+.ticker-wrap {
+  background: var(--surface-2);
+  border-top-color: var(--border);
+  border-bottom-color: var(--border);
+}
+.ticker-item      { color: var(--cream-muted); }
+.ticker-item .dot { background: var(--gold); }
+
+/* ══════════════════════════════════════════
+   STATS STRIP
+══════════════════════════════════════════ */
+.about-strip                   { background: #FFF; border-top-color: var(--border); border-bottom-color: var(--border); }
+.about-stat-num                { color: var(--gold); }
+.about-stat-label              { color: var(--cream-muted); }
+
+/* ══════════════════════════════════════════
+   SECTION LABELS & DIVIDERS
+══════════════════════════════════════════ */
+.section-label             { color: var(--gold); }
+.section-label::before,
+.section-label::after      { background: var(--gold); opacity: 0.35; }
+.gold-line                 { background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+
+/* ══════════════════════════════════════════
+   STORY SECTION
+══════════════════════════════════════════ */
+.story-section                   { background: #FAF9F5 !important; }
+.story-image-wrap::before        { border-color: var(--border); }
+.story-image-placeholder         { background: var(--surface-2); }
+.story-badge                     { background: var(--gold); }
+.story-badge span                { color: #FFF; }
+.story-text h2                   { color: var(--cream); }
+.story-text h2 em                { color: var(--gold-light); }
+.story-text p, .story-text .chef-name-label { color: var(--cream-muted); }
+.chef-sig                        { color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   MENU PREVIEW (homepage)
+══════════════════════════════════════════ */
+.menu-preview                    { background: var(--surface-2); }
+.menu-preview-head h2            { color: var(--cream); }
+.menu-preview-head p             { color: var(--cream-muted); }
+.menu-tabs                       { border-color: var(--border); }
+.menu-tab                        { color: var(--cream-muted); background: #FFF; border-right-color: var(--border); }
+.menu-tab.active,
+.menu-tab:hover                  { background: var(--gold); color: #FFF; }
+.menu-grid                       { background: var(--border); border-color: var(--border); }
+.menu-item                       { background: #FFF; }
+.menu-item:hover                 { background: var(--surface-2); }
+.menu-item::before               { background: var(--gold); }
+.menu-item-name                  { color: var(--cream); }
+.menu-item-price                 { color: var(--gold); }
+.menu-item-desc                  { color: var(--cream-muted); }
+.menu-item-tag                   { color: var(--gold); border-color: rgba(158,110,10,.25); }
+
+/* ══════════════════════════════════════════
+   GALLERY
+══════════════════════════════════════════ */
+.gallery-placeholder { background: var(--surface-2); }
+.gallery-label       { color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   EXPERIENCE SECTION
+══════════════════════════════════════════ */
+.experience-section              { background: #FFF; }
+.experience-video-placeholder    { background: var(--surface-2); }
+.play-btn                        { border-color: var(--gold); background: rgba(158,110,10,.06); }
+.play-btn:hover                  { background: var(--gold); }
+.exp-feature                     { border-left-color: var(--border); }
+.exp-feature:hover               { border-left-color: var(--gold); }
+.exp-feature h4                  { color: var(--cream); }
+.exp-feature p                   { color: var(--cream-muted); }
+
+/* ══════════════════════════════════════════
+   TESTIMONIALS
+══════════════════════════════════════════ */
+.testimonials                    { background: var(--surface-2); }
+.testimonials-head h2            { color: var(--cream); }
+.testimonial-card                { background: #FFF; border-color: var(--border); }
+.testimonial-card:hover          { border-color: var(--border-hover); }
+.testimonial-card::before        { color: var(--gold); opacity: 0.12; }
+.testimonial-stars span          { color: var(--gold); }
+.testimonial-text                { color: var(--cream); }
+.testimonial-name                { color: var(--cream); }
+.testimonial-source              { color: var(--gold); }
+.testimonial-avatar              { background: var(--surface-2); border-color: var(--border); }
+
+/* ══════════════════════════════════════════
+   RESERVATION CTA
+══════════════════════════════════════════ */
+.reservation-cta                 { background: var(--deep); }
+.reservation-cta::before         { background: radial-gradient(ellipse at 50% 50%, rgba(201,168,76,.06) 0%, transparent 60%); }
+.reservation-cta h2              { color: var(--cream); }
+.reservation-cta h2 em          { color: var(--gold-light); }
+.reservation-cta p               { color: var(--cream-muted); }
+
+/* ══════════════════════════════════════════
+   PAGE HERO (sub-pages)
+══════════════════════════════════════════ */
+.page-hero                       { background: var(--surface-2); }
+.page-hero-bg                    { filter: brightness(0.08) saturate(0.4); }
+.page-hero-bg::after             { background: linear-gradient(to top, #FAF9F5 0%, transparent 55%); }
+.page-hero-content h1            { color: #1C1408; }
+.page-hero-content h1 em        { color: var(--gold); }
+.page-breadcrumb                 { color: #9C8A6A; }
+.page-breadcrumb a               { color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   MENU PAGE (full menu)
+══════════════════════════════════════════ */
+.menu-page-section               { background: #FAF9F5; }
+.menu-category-title             { color: var(--cream); border-bottom-color: var(--border); }
+.menu-category-title em         { color: var(--gold); }
+.menu-list-item                  { border-bottom-color: var(--border); }
+.menu-list-item:hover            { background: rgba(158,110,10,.025); }
+.menu-list-info h3               { color: var(--cream); }
+.menu-list-info p                { color: var(--cream-muted); }
+.menu-list-price                 { color: var(--gold); }
+.tag                             { color: var(--gold); border-color: rgba(158,110,10,.2); }
+
+/* ══════════════════════════════════════════
+   ABOUT PAGE
+══════════════════════════════════════════ */
+.about-story                     { background: #FAF9F5; }
+.about-img-placeholder           { background: var(--surface-2); }
+.about-values                    { background: #FFF; }
+.value-card                      { border-color: var(--border); }
+.value-card:hover                { border-color: var(--border-hover); background: rgba(158,110,10,.02); }
+.value-card h4                   { color: var(--cream); }
+.value-card p                    { color: var(--cream-muted); }
+.team-section                    { background: var(--surface-2); }
+.team-head h2                    { color: var(--cream); }
+.team-card-placeholder           { background: var(--surface-2); }
+.team-card-info                  { background: #FFF; border-color: var(--border); border-top-color: var(--gold); }
+.team-card-info h3               { color: var(--cream); }
+.team-card-info .role            { color: var(--gold); }
+.team-card-info p                { color: var(--cream-muted); }
+
+/* ══════════════════════════════════════════
+   RESERVATIONS PAGE
+══════════════════════════════════════════ */
+.reservation-section             { background: #FAF9F5; }
+.reservation-info h2             { color: var(--cream); }
+.reservation-info h2 em         { color: var(--gold); }
+.reservation-info p              { color: var(--cream-muted); }
+.hours-list dt                   { color: var(--gold); }
+.hours-list dd                   { color: var(--cream-muted); }
+.res-form                        { background: #FFF; border-color: var(--border); box-shadow: 0 4px 40px rgba(0,0,0,.05); }
+.res-form h3                     { color: var(--gold); }
+.res-form h2                     { color: var(--cream); }
+.form-group label                { color: var(--cream-muted); }
+.form-group input,
+.form-group select,
+.form-group textarea             { background: var(--surface-2); border-color: var(--border); color: var(--cream); }
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus       { border-color: var(--gold); }
+.form-group input::placeholder,
+.form-group textarea::placeholder{ color: rgba(107,91,64,.4); }
+.form-group select option        { background: #FFF; color: var(--cream); }
+.form-submit                     { background: var(--gold); color: #FFF; border-color: var(--gold); }
+.form-submit:hover               { background: transparent; color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   CONTACT PAGE
+══════════════════════════════════════════ */
+.contact-section                 { background: #FAF9F5; }
+.contact-card                    { border-color: var(--border); background: #FFF; }
+.contact-card:hover              { border-color: var(--border-hover); }
+.contact-card-icon               { color: var(--gold); border-color: var(--border); background: var(--surface-2); }
+.contact-card-text h4            { color: var(--gold); }
+.contact-card-text p,
+.contact-card-text a             { color: var(--cream-muted); }
+.contact-card-text a:hover       { color: var(--gold); }
+.contact-map-placeholder         { background: var(--surface-2); border-color: var(--border); }
+.contact-map-placeholder::before {
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(158,110,10,.06) 40px, rgba(158,110,10,.06) 41px),
+    repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(158,110,10,.06) 40px, rgba(158,110,10,.06) 41px);
+}
+.map-label                       { color: var(--gold); background: rgba(255,255,255,.92); border-color: var(--border); }
+.contact-form                    { background: #FFF; border-color: var(--border); box-shadow: 0 4px 40px rgba(0,0,0,.05); }
+.contact-form h2                 { color: var(--cream); }
+.contact-form .sub-head          { color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════ */
+footer                   { background: var(--surface-2); border-top-color: var(--border); }
+.footer-brand h3         { color: var(--cream); }
+.footer-brand .sub       { color: var(--gold); }
+.footer-brand p          { color: var(--cream-muted); }
+.social-icon             { border-color: var(--border); color: var(--cream-muted); background: #FFF; }
+.social-icon:hover       { border-color: var(--gold); color: var(--gold); background: rgba(158,110,10,.04); }
+.footer-col h4           { color: var(--gold); }
+.footer-col ul a         { color: var(--cream-muted); }
+.footer-col ul a:hover   { color: var(--gold); }
+.footer-col address      { color: var(--cream-muted); }
+.footer-col address a    { color: var(--gold); }
+.footer-bottom           { border-top-color: var(--border); }
+.footer-bottom p         { color: var(--cream-muted); }
+
+/* ══════════════════════════════════════════
+   DECORATIVE ELEMENTS
+══════════════════════════════════════════ */
+.corner-ornament--tl::before, .corner-ornament--tl::after,
+.corner-ornament--tr::before, .corner-ornament--tr::after,
+.corner-ornament--bl::before, .corner-ornament--bl::after,
+.corner-ornament--br::before, .corner-ornament--br::after {
+  background: var(--gold); opacity: 0.45;
+}
+.hover-glow:hover { box-shadow: 0 0 24px rgba(158,110,10,.1), 0 4px 18px rgba(0,0,0,.05); }
+.animated-border::before, .animated-border::after { background: var(--gold); }
+
+/* ══════════════════════════════════════════
+   INLINE STYLE OVERRIDES (timeline, awards etc)
+══════════════════════════════════════════ */
+/* Timeline items */
+[style*="border:1px solid var(--border)"] {
+  border-color: var(--border) !important;
+}
+/* Inline backgrounds that use surface vars are already covered by var() cascade */

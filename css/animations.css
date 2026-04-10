@@ -1,0 +1,327 @@
+/* ============================================================
+   WORLD PLATE GOURMET — Animations Stylesheet
+   ============================================================ */
+
+/* ── Page Loader ── */
+#page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--black);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+#page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  animation: loaderFadeIn 0.5s ease forwards;
+}
+.loader-box {
+  width: 64px; height: 64px;
+  border: 1.5px solid var(--gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: loaderPulse 2s ease-in-out infinite;
+}
+.loader-box::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(201,168,76,0.3);
+}
+.loader-box .initials {
+  font-family: var(--font-cap);
+  font-size: 1.1rem;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+.loader-box .sub-init {
+  font-family: var(--font-cap);
+  font-size: 0.35rem;
+  color: var(--gold);
+  letter-spacing: 0.2em;
+}
+.loader-name {
+  font-family: var(--font-cap);
+  font-size: 0.85rem;
+  letter-spacing: 0.3em;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.loader-progress {
+  width: 200px;
+  height: 1px;
+  background: rgba(201,168,76,0.15);
+  position: relative;
+  overflow: hidden;
+}
+.loader-progress-bar {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  background: var(--gold);
+  width: 0%;
+  transition: width 0.1s linear;
+}
+.loader-text {
+  font-family: var(--font-cap);
+  font-size: 0.55rem;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+@keyframes loaderFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes loaderPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(201,168,76,0.2); }
+  50% { transform: scale(1.03); box-shadow: 0 0 20px rgba(201,168,76,0.15); }
+}
+
+/* ── Transition Overlay ── */
+.page-transition {
+  position: fixed;
+  inset: 0;
+  background: var(--black);
+  z-index: 9998;
+  pointer-events: none;
+  transform: translateY(100%);
+  transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.page-transition.slide-in { transform: translateY(0); }
+.page-transition.slide-out { transform: translateY(-100%); }
+
+/* ── Staggered Children Animation ── */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.stagger-children.visible > *:nth-child(1) { animation: staggerItem 0.6s ease 0.0s forwards; }
+.stagger-children.visible > *:nth-child(2) { animation: staggerItem 0.6s ease 0.1s forwards; }
+.stagger-children.visible > *:nth-child(3) { animation: staggerItem 0.6s ease 0.2s forwards; }
+.stagger-children.visible > *:nth-child(4) { animation: staggerItem 0.6s ease 0.3s forwards; }
+.stagger-children.visible > *:nth-child(5) { animation: staggerItem 0.6s ease 0.4s forwards; }
+.stagger-children.visible > *:nth-child(6) { animation: staggerItem 0.6s ease 0.5s forwards; }
+
+@keyframes staggerItem {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Parallax elements ── */
+.parallax-slow { will-change: transform; }
+.parallax-med  { will-change: transform; }
+
+/* ── Decorative animated borders ── */
+.animated-border {
+  position: relative;
+  overflow: hidden;
+}
+.animated-border::before,
+.animated-border::after {
+  content: '';
+  position: absolute;
+  background: var(--gold);
+}
+.animated-border::before {
+  top: 0; left: -100%;
+  width: 100%; height: 1px;
+  animation: borderSlide 3s ease-in-out infinite;
+}
+.animated-border::after {
+  bottom: 0; right: -100%;
+  width: 100%; height: 1px;
+  animation: borderSlide 3s ease-in-out infinite 1.5s;
+}
+@keyframes borderSlide {
+  0% { left: -100%; }
+  50%, 100% { left: 100%; }
+}
+
+/* ── Number count-up ── */
+.count-up { display: inline-block; }
+
+/* ── Gold particle dots ── */
+.particles-canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Hover glow effect ── */
+.hover-glow {
+  transition: box-shadow var(--transition);
+}
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(201,168,76,0.12), 0 0 60px rgba(201,168,76,0.06);
+}
+
+/* ── Text reveal line animation ── */
+.text-reveal {
+  overflow: hidden;
+  display: block;
+}
+.text-reveal-inner {
+  display: block;
+  transform: translateY(100%);
+  transition: transform 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.text-reveal.visible .text-reveal-inner {
+  transform: translateY(0);
+}
+
+/* ── Decorative gold corner ornaments ── */
+.corner-ornament {
+  position: absolute;
+}
+.corner-ornament::before,
+.corner-ornament::after {
+  content: '';
+  position: absolute;
+  background: var(--gold);
+  opacity: 0.6;
+}
+.corner-ornament--tl { top: 0; left: 0; }
+.corner-ornament--tl::before { width: 20px; height: 1px; top: 0; left: 0; }
+.corner-ornament--tl::after  { width: 1px; height: 20px; top: 0; left: 0; }
+.corner-ornament--tr { top: 0; right: 0; }
+.corner-ornament--tr::before { width: 20px; height: 1px; top: 0; right: 0; }
+.corner-ornament--tr::after  { width: 1px; height: 20px; top: 0; right: 0; }
+.corner-ornament--bl { bottom: 0; left: 0; }
+.corner-ornament--bl::before { width: 20px; height: 1px; bottom: 0; left: 0; }
+.corner-ornament--bl::after  { width: 1px; height: 20px; bottom: 0; left: 0; }
+.corner-ornament--br { bottom: 0; right: 0; }
+.corner-ornament--br::before { width: 20px; height: 1px; bottom: 0; right: 0; }
+.corner-ornament--br::after  { width: 1px; height: 20px; bottom: 0; right: 0; }
+
+/* ── Menu tab panel transitions ── */
+.menu-panel {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+.menu-panel.hidden {
+  display: none;
+}
+.menu-panel.fade-in {
+  animation: panelFade 0.4s ease forwards;
+}
+@keyframes panelFade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Typewriter cursor ── */
+.typewriter::after {
+  content: '|';
+  color: var(--gold);
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ── Ambient glow background elements ── */
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.06;
+}
+.ambient-glow--gold {
+  background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
+}
+.ambient-glow--lg {
+  width: 600px; height: 600px;
+}
+.ambient-glow--sm {
+  width: 300px; height: 300px;
+}
+
+/* ── Award badges animation ── */
+.award-badge {
+  animation: float 4s ease-in-out infinite;
+}
+.award-badge:nth-child(2) { animation-delay: 1.5s; }
+.award-badge:nth-child(3) { animation-delay: 3s; }
+
+/* ── Horizontal scrolling strip ── */
+.ticker-wrap {
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.2rem 0;
+  background: var(--surface);
+}
+.ticker {
+  display: flex;
+  gap: 3rem;
+  white-space: nowrap;
+  animation: ticker 25s linear infinite;
+}
+.ticker-item {
+  font-family: var(--font-cap);
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  color: var(--cream-muted);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+.ticker-item .dot {
+  width: 4px; height: 4px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── Smooth menu hover underline animation ── */
+.underline-reveal {
+  position: relative;
+  display: inline-block;
+}
+.underline-reveal::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.underline-reveal:hover::after,
+.underline-reveal.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
