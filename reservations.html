@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations — World Plate Gourmet</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <!-- LIGHT THEME: uncomment the line below to switch to white background -->
+  <!-- <link rel="stylesheet" href="css/theme-white.css"> -->
+</head>
+<body>
+
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="images/logo.png" alt="Logo" style="width:72px;height:72px;animation:loaderPulse 2s ease-in-out infinite;" />
+      <span class="loader-name">World Plate Gourmet</span>
+    </div>
+    <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+    <span class="loader-text">Preparing Your Table</span>
+  </div>
+  <div class="page-transition"></div>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav class="nav-mobile">
+    <button class="nav-mobile-close">✕</button>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">Our Story</a>
+    <a href="reservations.html">Reserve</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="World Plate Gourmet Logo" style="width:46px;height:46px;display:block;" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">World Plate</span>
+        <span class="nav-logo-sub">Gourmet</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="reservations.html" class="nav-reserve active">Reserve a Table</a>
+    <button class="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <div class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="page-hero-content container">
+        <p class="page-breadcrumb"><a href="index.html">Home</a> · Reservations</p>
+        <h1>Reserve Your <em>Table</em></h1>
+      </div>
+    </div>
+
+    <section class="reservation-section">
+      <div class="container">
+        <div class="reservation-layout">
+
+          <!-- Info -->
+          <div class="reveal-left">
+            <span class="section-label section-label--left">Book With Us</span>
+            <h2>An Evening<br>Worth <em>Remembering</em></h2>
+            <p>We welcome guests for dinner Tuesday through Sunday. For parties of six or more, or for private dining enquiries, please contact our reservations team directly.</p>
+            <p>We kindly ask for 48 hours notice for cancellations. Late arrivals beyond 15 minutes may forfeit their reservation.</p>
+            
+            <dl class="hours-list">
+              <dt>Dinner Service</dt>
+              <dd>Tuesday – Thursday: 18:00 – 22:30</dd>
+              <dd>Friday – Saturday: 18:00 – 23:00</dd>
+              <dd>Sunday: 17:30 – 21:30</dd>
+              <dt>Monday</dt>
+              <dd>Closed (Private Events Only)</dd>
+              <dt>Last Seating</dt>
+              <dd>90 minutes before closing time</dd>
+            </dl>
+
+            <div style="margin-top:2.5rem;padding:2rem;border:1px solid var(--border);background:var(--surface);">
+              <h4 style="font-family:var(--font-cap);font-size:0.62rem;letter-spacing:0.25em;color:var(--gold);text-transform:uppercase;margin-bottom:1rem;">Private Dining</h4>
+              <p style="font-size:0.76rem;color:var(--cream-muted);line-height:1.9;margin-bottom:1rem;">Our private dining rooms accommodate 6 to 40 guests. Bespoke menus, personalised wine pairings, and dedicated service are available for your exclusive event.</p>
+              <a href="contact.html" class="btn-secondary">Enquire About Private Dining</a>
+            </div>
+
+            <div style="margin-top:1.5rem;padding:2rem;border:1px solid var(--border);background:var(--surface);">
+              <h4 style="font-family:var(--font-cap);font-size:0.62rem;letter-spacing:0.25em;color:var(--gold);text-transform:uppercase;margin-bottom:1rem;">The Chef's Table</h4>
+              <p style="font-size:0.76rem;color:var(--cream-muted);line-height:1.9;margin-bottom:1rem;">An immersive front-row kitchen experience for up to 6 guests. Interact with our team as each course is prepared before you. Available Friday & Saturday only.</p>
+              <a href="contact.html" class="btn-secondary">Enquire About Chef's Table</a>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="res-form reveal-right" style="position:relative;">
+            <div class="corner-ornament corner-ornament--tl"></div>
+            <div class="corner-ornament corner-ornament--tr"></div>
+            <div class="corner-ornament corner-ornament--bl"></div>
+            <div class="corner-ornament corner-ornament--br"></div>
+            <h3>Online Reservation</h3>
+            <h2>Secure Your Table</h2>
+
+            <form id="reservation-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" placeholder="Éric" required />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" placeholder="Moreau" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" placeholder="your@email.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" placeholder="+44 7000 000 000" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="res-date">Preferred Date</label>
+                  <input type="date" id="res-date" required />
+                </div>
+                <div class="form-group">
+                  <label for="res-time">Preferred Time</label>
+                  <select id="res-time" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <option>18:00</option>
+                    <option>18:30</option>
+                    <option>19:00</option>
+                    <option>19:30</option>
+                    <option>20:00</option>
+                    <option>20:30</option>
+                    <option>21:00</option>
+                    <option>21:30</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="guests">Number of Guests</label>
+                  <select id="guests" required>
+                    <option value="" disabled selected>Select</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6+</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="occasion">Occasion</label>
+                  <select id="occasion">
+                    <option value="" disabled selected>Select (optional)</option>
+                    <option>Anniversary</option>
+                    <option>Birthday</option>
+                    <option>Business Dinner</option>
+                    <option>Date Night</option>
+                    <option>Celebration</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="menu-pref">Menu Preference</label>
+                <select id="menu-pref">
+                  <option value="" disabled selected>Select (optional)</option>
+                  <option>À La Carte</option>
+                  <option>Tasting Menu — The Grand Journey</option>
+                  <option>Chef's Table Experience</option>
+                  <option>Undecided — please advise</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="dietary">Dietary Requirements & Special Requests</label>
+                <textarea id="dietary" placeholder="Please note any allergies, dietary requirements, or special requests..."></textarea>
+              </div>
+
+              <button type="submit" class="form-submit">Confirm Reservation</button>
+              <p style="font-size:0.68rem;color:var(--cream-muted);text-align:center;margin-top:1rem;line-height:1.8;">A confirmation will be sent to your email. For immediate assistance call <a href="tel:+442071234567" style="color:var(--gold);">+44 207 123 4567</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Policies -->
+    <section style="background:var(--surface);padding:4rem var(--gutter);">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;" class="stagger-children">
+          <div style="border-left:2px solid var(--border);padding-left:1.5rem;">
+            <h4 style="font-family:var(--font-cap);font-size:0.62rem;letter-spacing:0.25em;color:var(--gold);text-transform:uppercase;margin-bottom:0.8rem;">Dress Code</h4>
+            <p style="font-size:0.76rem;color:var(--cream-muted);line-height:1.8;">Smart casual to formal attire. We respectfully ask guests to avoid sportswear and athletic clothing.</p>
+          </div>
+          <div style="border-left:2px solid var(--border);padding-left:1.5rem;">
+            <h4 style="font-family:var(--font-cap);font-size:0.62rem;letter-spacing:0.25em;color:var(--gold);text-transform:uppercase;margin-bottom:0.8rem;">Children</h4>
+            <p style="font-size:0.76rem;color:var(--cream-muted);line-height:1.8;">We welcome guests of all ages. Children's portions and bespoke menus are available upon advance request.</p>
+          </div>
+          <div style="border-left:2px solid var(--border);padding-left:1.5rem;">
+            <h4 style="font-family:var(--font-cap);font-size:0.62rem;letter-spacing:0.25em;color:var(--gold);text-transform:uppercase;margin-bottom:0.8rem;">Cancellation</h4>
+            <p style="font-size:0.76rem;color:var(--cream-muted);line-height:1.8;">48-hour advance notice is appreciated. We retain a card on file for bookings of 4+. No-shows may incur a charge of ₹ 935 per person.</p>
+          </div>
+          <div style="border-left:2px solid var(--border);padding-left:1.5rem;">
+            <h4 style="font-family:var(--font-cap);font-size:0.62rem;letter-spacing:0.25em;color:var(--gold);text-transform:uppercase;margin-bottom:0.8rem;">Wine & Corkage</h4>
+            <p style="font-size:0.76rem;color:var(--cream-muted);line-height:1.8;">We proudly offer our 800+ label cellar. Guests may bring a personal bottle on weeknights; corkage is ₹ 935 per bottle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>World Plate Gourmet</h3>
+        <span class="sub">Indian Fine Dining · Est. 2009</span>
+        <p>Where the rich culinary traditions of India are presented with the reverence and artistry they deserve.</p>
+        <div class="footer-socials">
+          <a class="social-icon" href="#" aria-label="Instagram">IG</a>
+          <a class="social-icon" href="#" aria-label="Facebook">FB</a>
+          <a class="social-icon" href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Dining</h4><ul>
+        <li><a href="#">Tasting Menu</a></li>
+        <li><a href="#">Wine Cellar</a></li>
+        <li><a href="#">Private Dining</a></li>
+        <li><a href="#">Chef's Table</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Visit Us</h4>
+        <address>Plot No. 125 Highway<br>Bhubaneswar, Odisha, 751111<br><br>
+          <a href="tel:+442071234567">+44 207 123 4567</a><br>
+          <a href="mailto:dine@worldplategourmet.com">dine@worldplategourmet.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 World Plate Gourmet. All rights reserved.</p>
+      <p>Privacy Policy · Terms</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — World Plate Gourmet</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <!-- LIGHT THEME: uncomment the line below to switch to white background -->
+  <!-- <link rel="stylesheet" href="css/theme-white.css"> -->
+</head>
+<body>
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="images/logo.png" alt="Logo" style="width:72px;height:72px;animation:loaderPulse 2s ease-in-out infinite;" />
+      <span class="loader-name">World Plate Gourmet</span>
+    </div>
+    <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+    <span class="loader-text">Setting the Table</span>
+  </div>
+  <div class="page-transition"></div>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav class="nav-mobile">
+    <button class="nav-mobile-close">✕</button>
+    <a href="index.html">Home</a><a href="menu.html">Menu</a>
+    <a href="about.html">Our Story</a><a href="reservations.html">Reserve</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="World Plate Gourmet Logo" style="width:46px;height:46px;display:block;" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">World Plate</span>
+        <span class="nav-logo-sub">Gourmet</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="reservations.html" class="nav-reserve">Reserve a Table</a>
+    <button class="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="page-hero-content container">
+        <p class="page-breadcrumb"><a href="index.html">Home</a> · Menu</p>
+        <h1>Our <em>Menu</em></h1>
+      </div>
+    </div>
+
+    <section style="background:var(--surface);padding:4rem var(--gutter);">
+      <div class="container" style="text-align:center;max-width:700px;">
+        <span class="section-label" style="justify-content:center;">Seasonal · Artisanal · Authentic</span>
+        <p style="font-family:var(--font-display);font-size:1.3rem;font-style:italic;color:var(--cream);margin-top:1.5rem;line-height:1.7;">"India's gastronomy is the world's most complex tapestry — we present it with the reverence it deserves."</p>
+        <p style="font-size:0.72rem;color:var(--cream-muted);margin-top:0.5rem;letter-spacing:0.1em;">— Chef Éric Moreau</p>
+        <div class="gold-line" style="margin:2rem auto;"></div>
+        <p style="font-size:0.78rem;color:var(--cream-muted);line-height:1.9;">Our menu draws inspiration from seventeen culinary regions of India. Please inform your server of dietary requirements. A 12.5% discretionary service charge applies.</p>
+      </div>
+    </section>
+
+    <section class="menu-page-section">
+      <div class="container">
+
+        <!-- Amuse-Bouche -->
+        <h2 class="menu-category-title reveal">Chef's <em>Amuse-Bouche</em></h2>
+        <div class="menu-list">
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Pani Puri Shots</h3>
+              <p>Three miniature crisp spheres filled with spiced potato & chickpea, jaljeera water served tableside — a playful homage to India's beloved street snack.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">Complimentary</span>
+              <div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breads -->
+        <h2 class="menu-category-title reveal">Breads from the <em>Tandoor</em></h2>
+        <div class="menu-list">
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Bread Basket</h3>
+              <p>Butter naan, garlic & coriander naan and laccha paratha baked to order in our clay tandoor. Saffron house butter.</p>
+            </div>
+            <div class="menu-list-item-right"><span class="menu-list-price">₹ 99</span><div class="menu-list-tags"><span class="tag">V</span></div></div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Amritsari Kulcha Flight</h3>
+              <p>Three stuffed kulchas — potato & onion, paneer & chilli, lamb keema — baked crisp, white butter.</p>
+            </div>
+            <div class="menu-list-item-right"><span class="menu-list-price">₹ 912</span></div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Warqi Paratha</h3>
+              <p>Flaky layered Mughal bread, ghee-basted, mixed achaar, house white butter.</p>
+            </div>
+            <div class="menu-list-item-right"><span class="menu-list-price">₹ 97</span><div class="menu-list-tags"><span class="tag">V</span></div></div>
+          </div>
+        </div>
+
+        <!-- Starters -->
+        <h2 class="menu-category-title reveal"><em>Shuruwaat</em> — Starters</h2>
+        <div class="menu-list">
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Gilafi Seekh Kebab</h3>
+              <p>Minced Cumbrian lamb & chicken, ginger, garlic, 12 spices, charred in the tandoor. Mint-yoghurt chutney, pickled shallots.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 918</span>
+              <div class="menu-list-tags"><span class="tag">Chef's Pick</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Burrata Chaat</h3>
+              <p>Creamy burrata on crispy papdi, tamarind & green chutney, pomegranate, fine sev — our East-meets-West signature opener.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 916</span>
+              <div class="menu-list-tags"><span class="tag">Signature</span><span class="tag">V</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Tandoori Jhinga</h3>
+              <p>Tiger prawns in carom seed, Kashmiri chilli & mustard oil yoghurt, flame-kissed in the clay oven. Ajwain butter, cucumber raita.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 922</span>
+              <div class="menu-list-tags"><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Scallop Amritsari</h3>
+              <p>Hand-dived Orkney scallops in spiced gram-flour batter, fried crisp, pickled red onion, tamarind reduction.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 926</span>
+              <div class="menu-list-tags"><span class="tag">New</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Dahi Ke Kebab</h3>
+              <p>Silken hung-curd patties with cashew & raisin filling, pan-seared golden, raw mango chutney, pomegranate.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 914</span>
+              <div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Wild Mushroom Galawati</h3>
+              <p>Lucknowi melt-in-the-mouth wild mushroom & chana dal patties, 50-spice blend, warqi paratha, rose petal chutney.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 915</span>
+              <div class="menu-list-tags"><span class="tag">V</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Chicken Malai Tikka</h3>
+              <p>Free-range chicken in cream cheese, white pepper, cardamom & mace, slow-roasted in the tandoor. Green chutney.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 917</span>
+              <div class="menu-list-tags"><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Papri Tokri Chaat</h3>
+              <p>Crispy potato basket with chickpea, whipped yoghurt, sweet tamarind, spiced water drops, fine sev. A theatrical chaat experience.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 913</span>
+              <div class="menu-list-tags"><span class="tag">V</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mains -->
+        <h2 class="menu-category-title reveal"><em>Mukhya Vyanjan</em> — Main Courses</h2>
+        <div class="menu-list">
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Raan-e-Sikandari</h3>
+              <p>Whole leg of lamb roasted for 6 hours in raw papaya, saffron & spiced yoghurt, perfumed with oud wood smoke. Saffron basmati, raita. Serves 2–3.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 985</span>
+              <div class="menu-list-tags"><span class="tag">Chef's Selection</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Lobster Malabar Curry</h3>
+              <p>Whole Canadian lobster in Kerala coconut milk, kokum & raw mango gravy with black mustard, curry leaf, green chilli. Appam.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 958</span>
+              <div class="menu-list-tags"><span class="tag">Signature</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Dum Gosht Biryani</h3>
+              <p>Hyderabadi aged basmati layered with slow-braised lamb shoulder, caramelised onions, saffron, rose water. Sealed & baked on dum. Raita, shorba.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 938</span>
+              <div class="menu-list-tags"><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Murgh Makhani</h3>
+              <p>Our celebrated butter chicken — tandoori chicken in a slow-simmered tomato, cream & fenugreek sauce perfected over 15 years. Naan or rice.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 928</span>
+              <div class="menu-list-tags"><span class="tag">Signature</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Lamb Roganjosh</h3>
+              <p>Kashmiri slow-braised lamb shoulder with ratanjot, fennel & chilli gravy. No onion or garlic — pure mountain flavour. Saffron basmati.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 936</span>
+              <div class="menu-list-tags"><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Chicken Chettinad</h3>
+              <p>Free-range chicken in bold Chettinad masala of kalpasi, marathi mokku & freshly cracked pepper. Malabar parotta.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 932</span>
+              <div class="menu-list-tags"><span class="tag">New</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Coastal Seabass Moilee</h3>
+              <p>Wild sea bass in Kerala turmeric & coconut milk broth, green chilli, ginger, curry leaf. Steamed red Matta rice.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 942</span>
+              <div class="menu-list-tags"><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Paneer Shahi Korma</h3>
+              <p>House-made paneer in Mughal cashew nut, cream & saffron sauce, edible silver leaf, kewra water. Saffron naan.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 928</span>
+              <div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Dal Makhani</h3>
+              <p>Whole black lentils slow-simmered on wood flame for 18 hours, butter, cream, house tomato masala. The hallmark of North Indian comfort.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 922</span>
+              <div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Prawn Balchão</h3>
+              <p>Goan-style tiger prawns in bold pickled masala of Kashmiri chilli, palm vinegar, garlic & cumin. Steamed basmati.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 936</span>
+              <div class="menu-list-tags"><span class="tag">GF</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vegetarian -->
+        <h2 class="menu-category-title reveal">Shakahari <em>Highlights</em> — Vegetarian</h2>
+        <div class="menu-list">
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Subz Dum Biryani</h3>
+              <p>Fragrant basmati sealed on dum with seasonal vegetables, fried onion, saffron, whole garam masala & rose water. Burhani raita.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 928</span>
+              <div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Saag Paneer</h3>
+              <p>Tandoori paneer in Punjabi mustard & spinach gravy, white butter, ginger julienne. Makki di roti.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 924</span>
+              <div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Chhole Masala</h3>
+              <p>Punjabi black chickpeas in smoky anardana & chole masala. Bhatura, pickled onion, green chilli.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 922</span>
+              <div class="menu-list-tags"><span class="tag">V</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Kerala Avial</h3>
+              <p>Mixed vegetables — yam, drumstick, raw banana — in coconut & yoghurt gravy, coconut oil, fresh curry leaf. Appam.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 922</span>
+              <div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sides -->
+        <h2 class="menu-category-title reveal"><em>Saath</em> — Accompaniments</h2>
+        <div class="menu-list">
+          <div class="menu-list-item reveal"><div class="menu-list-info"><h3>Saffron Basmati</h3><p>Aged basmati, Kashmiri saffron, fried onion, whole spices.</p></div><div class="menu-list-item-right"><span class="menu-list-price">₹ 96</span><div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div></div></div>
+          <div class="menu-list-item reveal"><div class="menu-list-info"><h3>Jeera Aloo</h3><p>Baby potatoes, cumin, dry mango powder, fresh coriander.</p></div><div class="menu-list-item-right"><span class="menu-list-price">₹ 98</span><div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div></div></div>
+          <div class="menu-list-item reveal"><div class="menu-list-info"><h3>Raita Trio</h3><p>Boondi, cucumber & mint, and pomegranate raitas together.</p></div><div class="menu-list-item-right"><span class="menu-list-price">₹ 97</span><div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div></div></div>
+          <div class="menu-list-item reveal"><div class="menu-list-info"><h3>Chutney Selection</h3><p>Four house chutneys: mint & coriander, tamarind, raw mango, tomato & chilli.</p></div><div class="menu-list-item-right"><span class="menu-list-price">₹ 95</span><div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div></div></div>
+        </div>
+
+        <!-- Desserts -->
+        <h2 class="menu-category-title reveal"><em>Meetha</em> — Desserts</h2>
+        <div class="menu-list">
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Gulab Jamun Soufflé</h3>
+              <p>Rose & cardamom soufflé, warm rabri poured tableside, pistachio tuile. Please allow 15 minutes.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 914</span>
+              <div class="menu-list-tags"><span class="tag">Signature</span><span class="tag">V</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Saffron & Cardamom Shrikhand</h3>
+              <p>Gujarati strained yoghurt dessert with Kesar saffron, almond brittle, fresh Alphonso mango sorbet.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 912</span>
+              <div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Chocolate Barfi Délice</h3>
+              <p>Valrhona 70% ganache with cardamom & rose, soft barfi centre, gold leaf, mishri ice cream.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 915</span>
+              <div class="menu-list-tags"><span class="tag">V</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Rasmalai Tres Leches</h3>
+              <p>Bengali rasmalai reimagined as tres-leches — sponge soaked in rose, saffron & pistachio milks, condensed milk cream cloud.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 913</span>
+              <div class="menu-list-tags"><span class="tag">New</span><span class="tag">V</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Kulfi Falooda</h3>
+              <p>House-churned pistachio & rose kulfi, rose falooda vermicelli, basil seeds, rose syrup — the iconic street dessert elevated.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 911</span>
+              <div class="menu-list-tags"><span class="tag">V</span><span class="tag">GF</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Mithai Trolley</h3>
+              <p>Daily selection of hand-crafted Indian confections — kaju katli, barfi, laddoo, imarti. Ask for today's offering.</p>
+            </div>
+            <div class="menu-list-item-right">
+              <span class="menu-list-price">₹ 916</span>
+              <div class="menu-list-tags"><span class="tag">V</span></div>
+            </div>
+          </div>
+          <div class="menu-list-item reveal">
+            <div class="menu-list-info">
+              <h3>Petits Fours</h3>
+              <p>Paan chocolate truffle, cardamom financier & mishri candied ginger. With tea or coffee.</p>
+            </div>
+            <div class="menu-list-item-right"><span class="menu-list-price">Complimentary</span><div class="menu-list-tags"><span class="tag">V</span></div></div>
+          </div>
+        </div>
+
+        <!-- Tasting Menu CTA -->
+        <div style="margin-top:5rem;text-align:center;background:var(--surface);border:1px solid var(--border);padding:4rem;position:relative;" class="reveal">
+          <div class="corner-ornament corner-ornament--tl"></div>
+          <div class="corner-ornament corner-ornament--tr"></div>
+          <div class="corner-ornament corner-ornament--bl"></div>
+          <div class="corner-ornament corner-ornament--br"></div>
+          <span class="section-label" style="justify-content:center;margin-bottom:1rem;">Chef's Table Experience</span>
+          <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--white);margin-bottom:0.5rem;">Safar-e-Hind</h2>
+          <p style="font-family:var(--font-cap);font-size:0.65rem;letter-spacing:0.25em;color:var(--gold);margin-bottom:1.5rem;">8 Courses · ₹ 9165 per person · Pairing from ₹ 985</p>
+          <p style="font-size:0.78rem;color:var(--cream-muted);max-width:560px;margin:0 auto 2rem;line-height:1.9;">A seasonal journey through eight distinct culinary regions of India — from the royal kitchens of Rajasthan to the spice markets of Kerala. Tuesday–Saturday, dinner only.</p>
+          <a href="reservations.html" class="btn-primary"><span>Reserve for Safar-e-Hind</span></a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>World Plate Gourmet</h3>
+        <span class="sub">Indian Fine Dining · Est. 2009</span>
+        <p>Where the rich culinary traditions of India are presented with the reverence and artistry they deserve.</p>
+        <div class="footer-socials">
+          <a class="social-icon" href="#" aria-label="Instagram">IG</a>
+          <a class="social-icon" href="#" aria-label="Facebook">FB</a>
+          <a class="social-icon" href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li>
+        <li><a href="about.html">Our Story</a></li><li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Dining</h4><ul>
+        <li><a href="#">Safar-e-Hind Tasting</a></li>
+        <li><a href="#">Tandoor Experience</a></li>
+        <li><a href="#">Private Dining</a></li>
+        <li><a href="#">Chef's Table</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Visit Us</h4>
+        <address>Plot No. 125 Highway<br>Bhubaneswar, Odisha, 751111<br><br>
+          <a href="tel:+442071234567">+44 207 123 4567</a><br>
+          <a href="mailto:dine@worldplategourmet.com">dine@worldplategourmet.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 World Plate Gourmet. All rights reserved.</p>
+      <p>V = Vegetarian · GF = Gluten Free</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

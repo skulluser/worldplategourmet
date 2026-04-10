@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Plate Gourmet — Fine Dining Experience</title>
+  <meta name="description" content="World Plate Gourmet — Where culinary artistry meets luxury. Discover a world of extraordinary flavours." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <!-- LIGHT THEME: uncomment the line below to switch to white background -->
+  <!-- <link rel="stylesheet" href="css/theme-white.css"> -->
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="images/logo.png" alt="Logo" style="width:72px;height:72px;animation:loaderPulse 2s ease-in-out infinite;" />
+      <span class="loader-name">World Plate Gourmet</span>
+    </div>
+    <div class="loader-progress">
+      <div class="loader-progress-bar"></div>
+    </div>
+    <span class="loader-text">Preparing Your Experience</span>
+  </div>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Mobile Nav -->
+  <nav class="nav-mobile">
+    <button class="nav-mobile-close">✕</button>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">Our Story</a>
+    <a href="reservations.html">Reserve</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Navbar -->
+  <header id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="World Plate Gourmet Logo" style="width:46px;height:46px;display:block;" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">World Plate</span>
+        <span class="nav-logo-sub">Gourmet</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="reservations.html" class="nav-reserve">Reserve a Table</a>
+    <button class="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section class="hero">
+      <div class="hero-bg-fallback"></div>
+      <canvas class="particles-canvas" style="position:absolute;inset:0;z-index:1;pointer-events:none;width:100%;height:100%;"></canvas>
+
+      <div class="hero-content" style="z-index:3;">
+        <p class="hero-label">Est. 2009 · Award-Winning Fine Dining</p>
+        <h1 class="hero-title">
+          The World<br>On Your
+          <em>Plate</em>
+        </h1>
+        <p class="hero-desc">A symphony of global flavours, meticulously crafted by masters of gastronomy for the discerning palate.</p>
+        <div class="hero-actions">
+          <a href="menu.html" class="btn-primary"><span>Explore Menu</span></a>
+          <a href="reservations.html" class="btn-secondary">Reserve Your Table</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── Ticker ── -->
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span class="ticker-item"><span class="dot"></span> Michelin Recommended 2024</span>
+        <span class="ticker-item"><span class="dot"></span> James Beard Award Nominee</span>
+        <span class="ticker-item"><span class="dot"></span> Best Indian Restaurant — City Excellence Awards</span>
+        <span class="ticker-item"><span class="dot"></span> World's 50 Best Restaurants Longlist</span>
+        <span class="ticker-item"><span class="dot"></span> Zagat Rated 29/30</span>
+        <span class="ticker-item"><span class="dot"></span> Open Tuesday–Sunday</span>
+      </div>
+    </div>
+
+    <!-- ── Stats Strip ── -->
+    <div class="about-strip">
+      <div class="about-strip-inner stagger-children">
+        <div>
+          <span class="about-stat-num" data-count="15" data-suffix="+">15+</span>
+          <span class="about-stat-label">Years of Excellence</span>
+        </div>
+        <div>
+          <span class="about-stat-num" data-count="42">42</span>
+          <span class="about-stat-label">Global Ingredients Sourced Weekly</span>
+        </div>
+        <div>
+          <span class="about-stat-num" data-count="7">7</span>
+          <span class="about-stat-label">International Awards</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Story Section ── -->
+    <section class="story-section" style="background:var(--black);padding:clamp(5rem,10vw,9rem) var(--gutter);">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image-wrap reveal-left">
+            <div class="story-image-placeholder">
+              <img src="images/chef-portrait.jpg" alt="Executive Chef">
+              <!-- <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
+                <!-- <circle cx="40" cy="30" r="16" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
+                <path d="M16 70c0-13.255 10.745-24 24-24s24 10.745 24 24" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
+                <text x="40" y="75" text-anchor="middle" font-family="serif" font-size="8" fill="rgba(201,168,76,0.3)">chef portrait</text> -->
+              </svg>
+            </div>
+            <div class="story-badge">
+              <span data-count="15" data-suffix="">15</span>
+              <span>Years</span>
+            </div>
+          </div>
+          <div class="story-text reveal-right">
+            <span class="section-label section-label--left">Our Heritage</span>
+            <h2>A Culinary<br>Journey <em>Without Borders</em></h2>
+            <p>Founded in 2009 by Executive Chef Éric Moreau, World Plate Gourmet was born from a singular vision: to bring the world's most extraordinary flavours to a single table. Each dish is a passport, each season a new destination.</p>
+            <p>Our kitchen team traverses continents, working hand-in-hand with artisan farmers, fishmongers, and purveyors to source ingredients of unparalleled quality. The result is a dining experience that transcends borders.</p>
+            <div class="gold-line gold-line--left" style="margin:2rem 0;"></div>
+            <p class="chef-sig">Éric Moreau</p>
+            <span class="chef-name-label">Executive Chef & Founder</span>
+            <div style="margin-top:2rem;">
+              <a href="about.html" class="btn-secondary">Discover Our Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Menu Preview ── -->
+    <section class="menu-preview">
+      <div class="container">
+        <div class="menu-preview-head reveal">
+          <span class="section-label" style="justify-content:center;">Seasonal Menu</span>
+          <h2>Crafted with <em style="font-style:italic;color:var(--gold-light);">Passion</em></h2>
+          <p>Each dish is a narrative — ingredients selected at their peak, techniques perfected over decades.</p>
+        </div>
+
+        <div class="menu-tabs reveal">
+          <button class="menu-tab active" data-tab="starters">Starters</button>
+          <button class="menu-tab" data-tab="mains">Mains</button>
+          <button class="menu-tab" data-tab="desserts">Desserts</button>
+          <button class="menu-tab" data-tab="tasting">Tasting Menu</button>
+        </div>
+
+        <div class="menu-panel menu-grid" data-panel="starters">
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Gilafi Seekh Kebab</span>
+              <span class="menu-item-price">₹ 918</span>
+            </div>
+            <p class="menu-item-desc">Minced lamb & chicken blended with aromatic herbs, charred in the tandoor, served with mint chutney and saffron raita.</p>
+            <span class="menu-item-tag">Chef's Selection</span>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Burrata Chaat</span>
+              <span class="menu-item-price">₹ 916</span>
+            </div>
+            <p class="menu-item-desc">Creamy burrata atop crispy papdi, tamarind & green chutney, pomegranate, sev — our signature East-meets-West starter.</p>
+            <span class="menu-item-tag">Signature</span>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Tandoori Jhinga</span>
+              <span class="menu-item-price">₹ 922</span>
+            </div>
+            <p class="menu-item-desc">Tiger prawns marinated in carom seed, kashmiri chilli & mustard oil yoghurt, finished in the clay oven, ajwain butter.</p>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Dahi Ke Kebab</span>
+              <span class="menu-item-price">₹ 914</span>
+            </div>
+            <p class="menu-item-desc">Velvety hung curd patties with cashew & raisin stuffing, pan-seared golden, served with raw mango chutney.</p>
+            <span class="menu-item-tag">Vegetarian</span>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Scallop Amritsari</span>
+              <span class="menu-item-price">₹ 926</span>
+            </div>
+            <p class="menu-item-desc">Hand-dived scallops in spiced gram-flour batter, fried to a crisp, pickled onion salad, tamarind reduction.</p>
+            <span class="menu-item-tag">New</span>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Wild Mushroom Galawati</span>
+              <span class="menu-item-price">₹ 915</span>
+            </div>
+            <p class="menu-item-desc">Lucknowi-style melt-in-the-mouth mushroom & lentil patties, 50-spice blend, warqi paratha, rose petal chutney.</p>
+            <span class="menu-item-tag">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="menu-panel menu-grid hidden" data-panel="mains">
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Raan-e-Sikandari</span>
+              <span class="menu-item-price">₹ 948</span>
+            </div>
+            <p class="menu-item-desc">Slow-roasted whole leg of lamb, marinated 24 hours in raw papaya, saffron & spiced yoghurt, served on saffron pilaf. (Serves 2–3)</p>
+            <span class="menu-item-tag">Chef's Selection</span>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Lobster Malabar Curry</span>
+              <span class="menu-item-price">₹ 958</span>
+            </div>
+            <p class="menu-item-desc">Canadian lobster in a Kerala-style coconut & kokum sauce with mustard seeds, curry leaf and raw mango. Served with appam.</p>
+            <span class="menu-item-tag">Signature</span>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Lamb Roganjosh</span>
+              <span class="menu-item-price">₹ 936</span>
+            </div>
+            <p class="menu-item-desc">Kashmiri slow-braised lamb shoulder, whole spices, ratanjot & Kashmiri chilli gravy. Accompanied by saffron basmati.</p>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Paneer Shahi Korma</span>
+              <span class="menu-item-price">₹ 928</span>
+            </div>
+            <p class="menu-item-desc">House-made paneer in a Mughal-era cashew & cream sauce, edible silver leaf, saffron naan.</p>
+            <span class="menu-item-tag">Vegetarian</span>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Coastal Seabass Moilee</span>
+              <span class="menu-item-price">₹ 942</span>
+            </div>
+            <p class="menu-item-desc">Wild seabass fillet in a delicate turmeric & coconut milk broth, green chilli, ginger, steamed red rice.</p>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Chicken Chettinad</span>
+              <span class="menu-item-price">₹ 932</span>
+            </div>
+            <p class="menu-item-desc">Free-range chicken in a bold Chettinad spice masala with kalpasi, marathi mokku & freshly ground pepper. Parotta on the side.</p>
+            <span class="menu-item-tag">New</span>
+          </div>
+        </div>
+
+        <div class="menu-panel menu-grid hidden" data-panel="desserts">
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Gulab Jamun Soufflé</span>
+              <span class="menu-item-price">₹ 914</span>
+            </div>
+            <p class="menu-item-desc">Light-as-air rose & cardamom soufflé, warm rabri sauce, pistachio tuile. Please allow 15 minutes.</p>
+            <span class="menu-item-tag">Signature</span>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Saffron Shrikhand</span>
+              <span class="menu-item-price">₹ 912</span>
+            </div>
+            <p class="menu-item-desc">Set Gujarati-style strained yoghurt dessert, Kesar saffron, cardamom, toasted almond brittle, fresh mango.</p>
+          </div>
+          <div class="menu-item hover-glow">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Chocolate Barfi Délice</span>
+              <span class="menu-item-price">₹ 915</span>
+            </div>
+            <p class="menu-item-desc">Valrhona 70% ganache infused with cardamom & rose, soft barfi centre, gold leaf, mishri ice cream.</p>
+          </div>
+        </div>
+
+        <div class="menu-panel hidden" data-panel="tasting">
+          <div style="text-align:center;padding:3rem;background:var(--surface);border:1px solid var(--border);">
+            <span class="section-label" style="justify-content:center;margin-bottom:1rem;">Prix Fixe</span>
+            <h3 style="font-family:var(--font-display);font-size:2.5rem;font-weight:300;color:var(--white);margin-bottom:0.5rem;">Safar-e-Hind</h3>
+            <p style="font-family:var(--font-cap);font-size:0.65rem;letter-spacing:0.25em;color:var(--gold);margin-bottom:2rem;">8 Courses · ₹ 9165 per person · Pairing from ₹ 985</p>
+            <div class="gold-line" style="margin:0 auto 2rem;"></div>
+            <p style="font-size:0.8rem;color:var(--cream-muted);max-width:600px;margin:0 auto 2rem;line-height:1.9;">Our flagship tasting menu journeys through eight distinct culinary regions of India — from the royal kitchens of Rajasthan to the spice markets of Kerala. A seasonal journey through eight regions of India. Dinner only, Tuesday–Saturday.</p>
+            <a href="reservations.html" class="btn-primary"><span>Reserve for Safar-e-Hind</span></a>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:3rem;" class="reveal">
+          <a href="menu.html" class="btn-secondary">View Full Indian Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Gallery ── -->
+    <section style="padding:0;background:var(--black);">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="gallery-placeholder" style="height:100%;">
+            <img src="images/gallery-main.jpg" alt="Restaurant Interior">
+            <!-- <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><rect x="5" y="5" width="50" height="50" stroke="rgba(201,168,76,0.25)" stroke-width="1"/><text x="30" y="35" text-anchor="middle" font-family="serif" font-size="7" fill="rgba(201,168,76,0.3)">interior</text></svg> -->
+          </div>
+          <div class="gallery-label">The Dining Room</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+             <img src="images/gallery-dish.jpg" alt="gallery-dish">
+            <!-- <svg width="40" height="40" viewBox="0 0 60 60" fill="none"><rect x="5" y="5" width="50" height="50" stroke="rgba(201,168,76,0.25)" stroke-width="1"/><text x="30" y="35" text-anchor="middle" font-family="serif" font-size="7" fill="rgba(201,168,76,0.3)">dish</text></svg> -->
+          </div>
+          <div class="gallery-label">Signature Dish</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <img src="images/gallery-cellar.jpg" alt="gallery-cellar">
+            <!-- <svg width="40" height="40" viewBox="0 0 60 60" fill="none"><rect x="5" y="5" width="50" height="50" stroke="rgba(201,168,76,0.25)" stroke-width="1"/><text x="30" y="35" text-anchor="middle" font-family="serif" font-size="7" fill="rgba(201,168,76,0.3)">cellar</text></svg> -->
+          </div>
+          <div class="gallery-label">Wine Cellar</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <img src="images/gallery-kitchen.jpg" alt="gallery-kitchen">
+            <!-- <svg width="40" height="40" viewBox="0 0 60 60" fill="none"><rect x="5" y="5" width="50" height="50" stroke="rgba(201,168,76,0.25)" stroke-width="1"/><text x="30" y="35" text-anchor="middle" font-family="serif" font-size="7" fill="rgba(201,168,76,0.3)">kitchen</text></svg> -->
+          </div>
+          <div class="gallery-label">The Kitchen</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <img src="images/gallery-dessert.jpg" alt="gallery-dessert">
+            <!-- <svg width="40" height="40" viewBox="0 0 60 60" fill="none"><rect x="5" y="5" width="50" height="50" stroke="rgba(201,168,76,0.25)" stroke-width="1"/><text x="30" y="35" text-anchor="middle" font-family="serif" font-size="7" fill="rgba(201,168,76,0.3)">dessert</text></svg> -->
+          </div>
+          <div class="gallery-label">Artisan Desserts</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Experience ── -->
+    <section class="experience-section">
+      <div class="container">
+        <div class="experience-grid">
+          <div class="experience-video-wrap reveal-left">
+            <!-- Replace with: <video src="videos/kitchen.mp4" autoplay muted loop playsinline></video> -->
+            <div class="experience-video-placeholder" style="aspect-ratio:4/3;position:relative;">
+              <div class="play-btn">
+                <svg width="18" height="20" viewBox="0 0 18 20" fill="none"><path d="M1 1l16 9L1 19V1z" stroke="var(--gold)" stroke-width="1.5" fill="none"/></svg>
+              </div>
+              <span style="position:absolute;bottom:1.5rem;left:1.5rem;font-family:var(--font-cap);font-size:0.55rem;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase;">kitchen film · 3:24</span>
+            </div>
+          </div>
+          <div class="reveal-right">
+            <span class="section-label section-label--left">The Experience</span>
+            <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--white);margin:1rem 0 1.5rem;line-height:1.2;">Where Every Detail<br><em style="font-style:italic;color:var(--gold-light);">Tells a Story</em></h2>
+            <p style="font-size:0.8rem;color:var(--cream-muted);line-height:1.9;margin-bottom:1rem;">From the moment you step inside, every element of World Plate Gourmet has been curated for the senses. Our sommelier team guides you through a cellar of over 800 labels.</p>
+            <p style="font-size:0.8rem;color:var(--cream-muted);line-height:1.9;">Private dining rooms accommodate intimate celebrations. Our events team crafts bespoke menus for your milestone moments.</p>
+            <div class="experience-features stagger-children">
+              <div class="exp-feature">
+                <h4>Wine Cellar</h4>
+                <p>800+ curated labels from 32 regions</p>
+              </div>
+              <div class="exp-feature">
+                <h4>Private Dining</h4>
+                <p>Exclusive rooms for 6–40 guests</p>
+              </div>
+              <div class="exp-feature">
+                <h4>Chef's Table</h4>
+                <p>Front-row kitchen experience</p>
+              </div>
+              <div class="exp-feature">
+                <h4>Sommelier</h4>
+                <p>Expert pairing for every course</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Testimonials ── -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials-head reveal">
+          <span class="section-label" style="justify-content:center;">Guest Words</span>
+          <h2>Voices of Our <em style="font-style:italic;color:var(--gold-light);">Table</em></h2>
+        </div>
+        <div class="testimonials-carousel stagger-children">
+          <div class="testimonial-card hover-glow">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"An extraordinary evening that redefined what I understand fine dining to be. Chef Moreau's Wagyu course was a transcendent moment."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <span class="testimonial-name">James Whitfield</span>
+                <span class="testimonial-source">The Evening Standard</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card hover-glow">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"The tasting menu is a love letter to global gastronomy. Service is impeccable without a trace of pretension. A true destination."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <span class="testimonial-name">Sophie Laurent</span>
+                <span class="testimonial-source">Condé Nast Traveller</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card hover-glow">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"A genuinely world-class experience. The Hokkaido scallop starter alone justifies the journey. I will return for the tasting menu."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <span class="testimonial-name">Rohan Mehta</span>
+                <span class="testimonial-source">Decanter Magazine</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Reservation CTA ── -->
+    <section class="reservation-cta">
+      <div class="container reservation-cta-inner reveal">
+        <span class="section-label" style="justify-content:center;">Join Us</span>
+        <h2>Begin Your <em>Journey</em></h2>
+        <div class="gold-line"></div>
+        <p>Secure your table and let us craft an evening you will carry with you long after the last course.</p>
+        <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;">
+          <a href="reservations.html" class="btn-primary"><span>Make a Reservation</span></a>
+          <a href="contact.html" class="btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>World Plate Gourmet</h3>
+        <span class="sub">Indian Fine Dining · Est. 2009</span>
+        <p>Where the rich culinary traditions of India are presented with the reverence and artistry they deserve. Every evening, a new world awaits.</p>
+        <div class="footer-socials">
+          <a class="social-icon" href="#" aria-label="Instagram">IG</a>
+          <a class="social-icon" href="#" aria-label="Facebook">FB</a>
+          <a class="social-icon" href="#" aria-label="Twitter">TW</a>
+          <a class="social-icon" href="#" aria-label="TripAdvisor">TA</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Dining</h4>
+        <ul>
+          <li><a href="#">Tasting Menu</a></li>
+          <li><a href="#">Wine Cellar</a></li>
+          <li><a href="#">Private Dining</a></li>
+          <li><a href="#">Chef's Table</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <address>
+          Plot No. 125 Highway<br>
+          Mayfair, London<br>
+          W1K 4AB<br><br>
+          <a href="tel:+442071234567">+44 207 123 4567</a><br>
+          <a href="mailto:dine@worldplategourmet.com">dine@worldplategourmet.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 World Plate Gourmet. All rights reserved.</p>
+      <p>Privacy Policy · Terms & Conditions</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

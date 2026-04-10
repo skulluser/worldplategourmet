@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story — World Plate Gourmet</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <!-- LIGHT THEME: uncomment the line below to switch to white background -->
+  <!-- <link rel="stylesheet" href="css/theme-white.css"> -->
+</head>
+<body>
+
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="images/logo.png" alt="Logo" style="width:72px;height:72px;animation:loaderPulse 2s ease-in-out infinite;" />
+      <span class="loader-name">World Plate Gourmet</span>
+    </div>
+    <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+    <span class="loader-text">Our Story Awaits</span>
+  </div>
+  <div class="page-transition"></div>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav class="nav-mobile">
+    <button class="nav-mobile-close">✕</button>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">Our Story</a>
+    <a href="reservations.html">Reserve</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="World Plate Gourmet Logo" style="width:46px;height:46px;display:block;" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">World Plate</span>
+        <span class="nav-logo-sub">Gourmet</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html" class="active">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="reservations.html" class="nav-reserve">Reserve a Table</a>
+    <button class="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <div class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="page-hero-content container">
+        <p class="page-breadcrumb"><a href="index.html">Home</a> · Our Story</p>
+        <h1>Our <em>Heritage</em></h1>
+      </div>
+    </div>
+
+    <!-- Intro Story -->
+    <section class="about-story">
+      <div class="container">
+        <div class="about-grid-2">
+          <div class="about-img-stack reveal-left">
+            <div class="about-img-placeholder img-main" style="position:absolute;top:0;left:0;width:75%;height:80%;display:flex;align-items:center;justify-content:center;">
+              <img class="img-main" src="images/about-main.jpg" alt="Chef at work">
+              <!-- <svg width="50" height="50" viewBox="0 0 60 60" fill="none"><rect x="5" y="5" width="50" height="50" stroke="rgba(201,168,76,0.3)" stroke-width="1"/><text x="30" y="35" text-anchor="middle" font-family="serif" font-size="7" fill="rgba(201,168,76,0.35)">chef at work</text></svg> -->
+            </div>
+            <div class="about-img-placeholder img-secondary" style="position:absolute;bottom:0;right:0;width:55%;height:55%;display:flex;align-items:center;justify-content:center;border:4px solid var(--black);">
+             <img class="img-secondary" src="images/about-secondary.jpg" alt="Dining room">
+              <!-- <svg width="40" height="40" viewBox="0 0 60 60" fill="none"><rect x="5" y="5" width="50" height="50" stroke="rgba(201,168,76,0.3)" stroke-width="1"/><text x="30" y="35" text-anchor="middle" font-family="serif" font-size="7" fill="rgba(201,168,76,0.35)">dining room</text></svg> -->
+            </div>
+          </div>
+          <div class="reveal-right">
+            <span class="section-label section-label--left">The Beginning</span>
+            <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--white);margin:1rem 0 1.5rem;line-height:1.2;">Born of <em style="font-style:italic;color:var(--gold-light);">Wanderlust</em> &amp; Obsession</h2>
+            <p style="font-size:0.8rem;color:var(--cream-muted);line-height:1.9;margin-bottom:1.2rem;">In 2009, Chef Éric Moreau returned to London after a decade of stages across Lyon, Tokyo, New York, and Marrakech with a singular conviction: the finest dining experiences on earth shared a common thread — absolute reverence for the ingredient.</p>
+            <p style="font-size:0.8rem;color:var(--cream-muted);line-height:1.9;margin-bottom:1.2rem;">World Plate Gourmet was conceived not as a restaurant with a cuisine, but as a living atlas of India's extraordinary gastronomic soul. The menu changes seasonally, the sourcing changes daily, and the curiosity never stops.</p>
+            <p style="font-size:0.8rem;color:var(--cream-muted);line-height:1.9;">Fifteen years on, our kitchen team of twenty-two represents seventeen nationalities, six culinary traditions, and one shared mission: to place the world — beautifully — on your plate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section style="background:var(--surface);padding:clamp(5rem,10vw,9rem) var(--gutter);">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:4rem;" class="reveal">
+          <span class="section-label" style="justify-content:center;">Journey Through Time</span>
+          <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3.5rem);font-weight:300;color:var(--white);margin-top:1rem;">15 Years of <em style="font-style:italic;color:var(--gold-light);">Excellence</em></h2>
+        </div>
+        <div style="position:relative;max-width:800px;margin:0 auto;">
+          <!-- Timeline line -->
+          <div style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--border);transform:translateX(-50%);"></div>
+          
+          <!-- Timeline items -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem 4rem;" class="stagger-children">
+            <div style="text-align:right;padding-right:2rem;position:relative;" class="timeline-item">
+              <div style="position:absolute;right:-7px;top:6px;width:13px;height:13px;border:1px solid var(--gold);background:var(--black);border-radius:50%;"></div>
+              <span style="font-family:var(--font-cap);font-size:0.7rem;letter-spacing:0.2em;color:var(--gold);">2009</span>
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);margin:0.4rem 0;">Opening Night</h3>
+              <p style="font-size:0.74rem;color:var(--cream-muted);line-height:1.8;">World Plate Gourmet opens its doors in Mayfair to an intimate 40 covers. Opening night is sold out within hours.</p>
+            </div>
+            <div style="padding-left:2rem;position:relative;margin-top:4rem;">
+              <div style="position:absolute;left:-7px;top:6px;width:13px;height:13px;border:1px solid var(--gold);background:var(--black);border-radius:50%;"></div>
+              <span style="font-family:var(--font-cap);font-size:0.7rem;letter-spacing:0.2em;color:var(--gold);">2011</span>
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);margin:0.4rem 0;">First Major Award</h3>
+              <p style="font-size:0.74rem;color:var(--cream-muted);line-height:1.8;">Named Best New Restaurant by the Evening Standard. Chef Moreau featured in TIME magazine's food issue.</p>
+            </div>
+            <div style="text-align:right;padding-right:2rem;position:relative;margin-top:-2rem;">
+              <div style="position:absolute;right:-7px;top:6px;width:13px;height:13px;border:1px solid var(--gold);background:var(--black);border-radius:50%;"></div>
+              <span style="font-family:var(--font-cap);font-size:0.7rem;letter-spacing:0.2em;color:var(--gold);">2015</span>
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);margin:0.4rem 0;">Wine Cellar & Expansion</h3>
+              <p style="font-size:0.74rem;color:var(--cream-muted);line-height:1.8;">A bespoke cellar of 800+ labels is installed. Private dining wing added with capacity for 40 guests.</p>
+            </div>
+            <div style="padding-left:2rem;position:relative;margin-top:2rem;">
+              <div style="position:absolute;left:-7px;top:6px;width:13px;height:13px;border:1px solid var(--gold);background:var(--black);border-radius:50%;"></div>
+              <span style="font-family:var(--font-cap);font-size:0.7rem;letter-spacing:0.2em;color:var(--gold);">2019</span>
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);margin:0.4rem 0;">Michelin Recognition</h3>
+              <p style="font-size:0.74rem;color:var(--cream-muted);line-height:1.8;">Michelin recommends World Plate Gourmet in their Great Britain & Ireland Guide for five consecutive years.</p>
+            </div>
+            <div style="text-align:right;padding-right:2rem;position:relative;margin-top:-1rem;">
+              <div style="position:absolute;right:-7px;top:6px;width:13px;height:13px;border:1px solid var(--gold);background:var(--black);border-radius:50%;"></div>
+              <span style="font-family:var(--font-cap);font-size:0.7rem;letter-spacing:0.2em;color:var(--gold);">2024</span>
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);margin:0.4rem 0;">World's 50 Best Longlist</h3>
+              <p style="font-size:0.74rem;color:var(--cream-muted);line-height:1.8;">Featured on the World's 50 Best Restaurants extended list. James Beard Award nomination announced.</p>
+            </div>
+            <div style="padding-left:2rem;position:relative;margin-top:2rem;">
+              <div style="position:absolute;left:-7px;top:6px;width:13px;height:13px;border:2px solid var(--gold);background:var(--gold);border-radius:50%;"></div>
+              <span style="font-family:var(--font-cap);font-size:0.7rem;letter-spacing:0.2em;color:var(--gold);">2025</span>
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);margin:0.4rem 0;">15th Anniversary</h3>
+              <p style="font-size:0.74rem;color:var(--cream-muted);line-height:1.8;">Celebrating 15 extraordinary years. A special anniversary tasting menu and cellar release planned for autumn.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="about-values">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:1rem;" class="reveal">
+          <span class="section-label" style="justify-content:center;">What Guides Us</span>
+          <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--white);margin-top:1rem;">Our <em style="font-style:italic;color:var(--gold-light);">Philosophy</em></h2>
+        </div>
+        <div class="values-grid stagger-children">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" stroke="var(--gold)" stroke-width="1"/><path d="M18 8v10l6 4" stroke="var(--gold)" stroke-width="1" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Seasonality</h4>
+            <p>Our menu breathes with the seasons. We follow nature's calendar, never forcing what the earth does not freely offer.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 4C10.268 4 4 10.268 4 18s6.268 14 14 14 14-6.268 14-14S25.732 4 18 4z" stroke="var(--gold)" stroke-width="1"/><path d="M8 18h20M18 8v20" stroke="var(--gold)" stroke-width="1"/></svg>
+            </div>
+            <h4>Provenance</h4>
+            <p>Every ingredient is traceable to its origin. We visit our producers personally, building relationships built on trust and mutual respect.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M6 28l6-8 6 5 6-12 6 6" stroke="var(--gold)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="4" width="28" height="28" rx="1" stroke="var(--gold)" stroke-width="1"/></svg>
+            </div>
+            <h4>Precision</h4>
+            <p>Technique is the foundation upon which creativity is built. Our kitchen is a laboratory of refinement where perfection is the baseline.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 4l4 9h9l-7 6 3 9-9-6-9 6 3-9-7-6h9z" stroke="var(--gold)" stroke-width="1" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Excellence</h4>
+            <p>We hold ourselves to a standard that exceeds expectation — in every dish, every interaction, every element of the experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team-section">
+      <div class="container">
+        <div class="team-head reveal">
+          <span class="section-label" style="justify-content:center;">The Culinary Team</span>
+          <h2>Masters of Their <em style="font-style:italic;color:var(--gold-light);">Craft</em></h2>
+        </div>
+        <div class="team-grid stagger-children">
+          <div class="team-card">
+            <div class="team-card-placeholder" style="display:flex;align-items:center;justify-content:center;background:var(--surface-2);">
+              <img class="team-card-img" src="images/chef-eric.jpg" alt="Chef Éric Moreau">
+              <!-- <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="22" r="12" stroke="rgba(201,168,76,0.35)" stroke-width="1"/><path d="M10 55c0-11.046 8.954-20 20-20s20 8.954 20 20" stroke="rgba(201,168,76,0.35)" stroke-width="1"/></svg> -->
+            </div>
+            <div class="team-card-info">
+              <h3>Éric Moreau</h3>
+              <span class="role">Executive Chef & Founder</span>
+              <p>Trained at Bocuse, Alain Ducasse and Nobu. 30 years of culinary mastery across four continents.</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card-placeholder" style="display:flex;align-items:center;justify-content:center;background:var(--surface-2);">
+             <img class="team-card-img" src="images/chef-yuki.jpg" alt="chef-yuki">
+              <!-- <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="22" r="12" stroke="rgba(201,168,76,0.35)" stroke-width="1"/><path d="M10 55c0-11.046 8.954-20 20-20s20 8.954 20 20" stroke="rgba(201,168,76,0.35)" stroke-width="1"/></svg> -->
+            </div>
+            <div class="team-card-info">
+              <h3>Yuki Tanaka</h3>
+              <span class="role">Head Chef — Japanese Cuisine</span>
+              <p>Former sous chef at Narisawa, Tokyo. Brings Japanese precision and seasonal philosophy to our kitchen.</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card-placeholder" style="display:flex;align-items:center;justify-content:center;background:var(--surface-2);">
+              <img class="team-card-img" src="images/chef-isabelle.jpg" alt="chef-isabelle">
+              <!-- <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="22" r="12" stroke="rgba(201,168,76,0.35)" stroke-width="1"/><path d="M10 55c0-11.046 8.954-20 20-20s20 8.954 20 20" stroke="rgba(201,168,76,0.35)" stroke-width="1"/></svg> -->
+            </div>
+            <div class="team-card-info">
+              <h3>Isabelle Fontaine</h3>
+              <span class="role">Pastry Chef</span>
+              <p>Meilleur Ouvrier de France finalist. Her desserts are architectural masterpieces of flavour and form.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section style="background:var(--surface);padding:clamp(5rem,10vw,9rem) var(--gutter);">
+      <div class="container" style="text-align:center;">
+        <span class="section-label" style="justify-content:center;" class="reveal">Recognition</span>
+        <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--white);margin:1rem 0 3rem;" class="reveal">Honours &amp; <em style="font-style:italic;color:var(--gold-light);">Awards</em></h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;" class="stagger-children">
+          <div style="border:1px solid var(--border);padding:2rem;transition:var(--transition);" onmouseenter="this.style.borderColor='var(--border-hover)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--gold);margin-bottom:0.5rem;">★★★</div>
+            <div style="font-family:var(--font-cap);font-size:0.6rem;letter-spacing:0.25em;color:var(--cream-muted);text-transform:uppercase;">Zagat Rated 29/30</div>
+          </div>
+          <div style="border:1px solid var(--border);padding:2rem;transition:var(--transition);" onmouseenter="this.style.borderColor='var(--border-hover)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--gold);margin-bottom:0.5rem;">M</div>
+            <div style="font-family:var(--font-cap);font-size:0.6rem;letter-spacing:0.25em;color:var(--cream-muted);text-transform:uppercase;">Michelin Recommended</div>
+          </div>
+          <div style="border:1px solid var(--border);padding:2rem;transition:var(--transition);" onmouseenter="this.style.borderColor='var(--border-hover)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--gold);margin-bottom:0.5rem;">JB</div>
+            <div style="font-family:var(--font-cap);font-size:0.6rem;letter-spacing:0.25em;color:var(--cream-muted);text-transform:uppercase;">James Beard Nominee</div>
+          </div>
+          <div style="border:1px solid var(--border);padding:2rem;transition:var(--transition);" onmouseenter="this.style.borderColor='var(--border-hover)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--gold);margin-bottom:0.5rem;">50</div>
+            <div style="font-family:var(--font-cap);font-size:0.6rem;letter-spacing:0.25em;color:var(--cream-muted);text-transform:uppercase;">World's Best Longlist</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="reservation-cta">
+      <div class="container reservation-cta-inner reveal">
+        <span class="section-label" style="justify-content:center;">Join Our Story</span>
+        <h2>Experience the <em>Difference</em></h2>
+        <div class="gold-line"></div>
+        <p>Every table is a chapter. Every visit, a new page. Reserve your seat in our story.</p>
+        <a href="reservations.html" class="btn-primary"><span>Make a Reservation</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>World Plate Gourmet</h3>
+        <span class="sub">Indian Fine Dining · Est. 2009</span>
+        <p>Where the rich culinary traditions of India are presented with the reverence and artistry they deserve.</p>
+        <div class="footer-socials">
+          <a class="social-icon" href="#" aria-label="Instagram">IG</a>
+          <a class="social-icon" href="#" aria-label="Facebook">FB</a>
+          <a class="social-icon" href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Dining</h4><ul>
+        <li><a href="#">Tasting Menu</a></li>
+        <li><a href="#">Wine Cellar</a></li>
+        <li><a href="#">Private Dining</a></li>
+        <li><a href="#">Chef's Table</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Visit Us</h4>
+        <address>Plot No. 125 Highway<br>Bhubaneswar, Odisha, 751111<br><br>
+          <a href="tel:+442071234567">+44 207 123 4567</a><br>
+          <a href="mailto:dine@worldplategourmet.com">dine@worldplategourmet.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 World Plate Gourmet. All rights reserved.</p>
+      <p>Privacy Policy · Terms</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
